@@ -1051,7 +1051,7 @@ public class GUI
         
         Scanner in = new Scanner(new BufferedReader(new InputStreamReader(
                 Settings.class.getClassLoader().getResourceAsStream(
-                        "me/mjolnir/mineconomy/dev/change_log.txt"))));
+                        "change_log.txt"))));
         StringBuffer sb = new StringBuffer();
         sb.append("<html><br><br><br>=== Change Log ===<br><br>");
         while (in.hasNextLine())

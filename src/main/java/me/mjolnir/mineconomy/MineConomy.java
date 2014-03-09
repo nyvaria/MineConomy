@@ -89,7 +89,7 @@ public class MineConomy extends JavaPlugin
                                         Settings.class
                                                 .getClassLoader()
                                                 .getResourceAsStream(
-                                                        "me/mjolnir/mineconomy/dev/readme_template.txt"))));
+                                                        "readme_template.txt"))));
                 while (in.hasNextLine())
                 {
                     out.println(in.nextLine());

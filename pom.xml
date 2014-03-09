@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.mjolnir</groupId>
+    <artifactId>MineConomy</artifactId>
+    <version>1.6.nyvaria01-SNAPSHOT</version>
+
+    <name>MineConomy</name>
+    <url>https://github.com/nyvaria/MineConomy</url>
+    <description>MineConomy is a simple, easy to use, multi-feature Economy API Plugin for Bukkit. (Nyvaria version)</description>
+    <inceptionYear>2012</inceptionYear>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/nyvaria/MineConomy/issues</url>
+    </issueManagement>
+
+    <developers>
+        <developer>
+            <id>MjolnirCommando</id>
+            <name>MjolnirCommando</name>
+            <url>https://github.com/MjolnirCommando/</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>captbunzo</id>
+            <name>captbunzo</name>
+            <email>captbunzo@gmail.com</email>
+            <url>https://github.com/captbunzo/</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <organization>
+        <name>Nyvaria</name>
+        <url>http://www.nyvaria.net</url>
+    </organization>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <scm>
+        <url>https://github.com/nyvaria/MineConomy</url>
+        <connection>scm:git:git://github.com/nyvaria/MineConomy.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/nyvaria/MineConomy.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <!--
+    <ciManagement>
+        <system>jenkins</system>
+        <url>http://ci.pjt.me</url>
+    </ciManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>pjt-repo-releases</id>
+            <name>repo.pjt.me Releases</name>
+            <url>http://repo.pjt.me/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>pjt-repo-snapshots</id>
+            <name>repo.pjt.me Snapshots</name>
+            <url>http://repo.pjt.me/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    -->
+
+    <repositories>
+        <repository>
+            <id>bukkit-repo</id>
+            <url>http://repo.bukkit.org/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>pjt-repo</id>
+            <url>http://repo.pjt.me/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.7.2-R0.3-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+        <defaultGoal>install</defaultGoal>
+        <directory>${basedir}/target</directory>
+        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+        <outputDirectory>${basedir}/target/classes</outputDirectory>
+
+        <resources>
+            <resource>
+                <targetPath>.</targetPath>
+                <filtering>true</filtering>
+                <directory>${basedir}/src/main/resources/</directory>
+                <includes>
+                    <include>plugin.yml</include>
+                    <include>plugin_info.txt</include>
+                </includes>
+            </resource>
+            <resource>
+                <targetPath>.</targetPath>
+                <filtering>false</filtering>
+                <directory>${basedir}/src/main/resources/</directory>
+                <includes>
+                    <include>README.md</include>
+                    <include>change_log.txt</include>
+                    <include>license.txt</include>
+                    <include>notes.txt</include>
+                    <include>readme_template.txt</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <fork>true</fork>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

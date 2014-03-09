@@ -1,8 +1,10 @@
-name: MineConomy
+name: ${pom.name}
+description: ${pom.description}
+version: ${pom.version}
+website: ${pom.url}
+
 main: me.mjolnir.mineconomy.MineConomy
-version: 1.6
-description: >
-             MineConomy is a simple, multi-feature Economy Plugin for Bukkit.
+
 permissions:
    mineconomy.*:
       description: Gives access to all MineConomy commands.

@@ -33,7 +33,7 @@ public class HelpListener implements ActionListener
 
 		Scanner in = new Scanner(new BufferedReader(new InputStreamReader(
 				Settings.class.getClassLoader().getResourceAsStream(
-						"me/mjolnir/mineconomy/dev/readme_template.txt"))));
+                        "readme_template.txt"))));
 		StringBuffer sb = new StringBuffer();
 		while (in.hasNextLine())
 		{

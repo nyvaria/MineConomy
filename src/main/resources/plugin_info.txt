@@ -1,0 +1,13 @@
+.: MineConomy - Plugin Developer Info :.
+
+Version:                        ${pom.version}
+Time of Last Edit:              Sat MAY 30, 2013 @ 5:00PM EST
+
+Dev Page:                       http://dev.bukkit.org/server-mods/MineConomy
+
+Developers:
+    MjolnirCommando -           Manager, Author, Ticket Manager
+    ToddVee -                   Translator, Contributor, Tester
+    Cyb3rm4n -                  Translator, Contributor, Tester
+    Holls1 -                    Translator
+    captbunzo -                 Fixing for Nyvaria

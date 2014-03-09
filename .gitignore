@@ -1,2 +1,33 @@
+
+# Java #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse Files #
+.project
+.classpath
+.loadpath
+.metadata
+.settings/
+local.properties
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# IntelliJ Files #
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Maven #
+/target
+
+# Original MineConomy .gitignore entries
 /doc
 /bin
