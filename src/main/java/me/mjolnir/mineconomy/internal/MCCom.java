@@ -24,7 +24,6 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class MCCom
 {
-	private static MineConomy	plugin	= new MineConomy();
 	private static AccountingBase accounting = null;
 
 	/**
@@ -1328,6 +1327,6 @@ public class MCCom
 	 */
 	public static JavaPlugin getPlugin()
 	{
-		return plugin;
+		return MineConomy.plugin;
 	}
 }
